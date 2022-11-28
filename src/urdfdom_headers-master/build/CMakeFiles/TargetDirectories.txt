@@ -1,0 +1,7 @@
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/uninstall.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/edit_cache.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/rebuild_cache.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/list_install_components.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/install.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/install/local.dir
+/home/yankai/ros_noetic_ws/src/urdfdom_headers-master/build/CMakeFiles/install/strip.dir

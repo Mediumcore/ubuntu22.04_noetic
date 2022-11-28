@@ -1,0 +1,8 @@
+setup.py
+src/rqt_web/__init__.py
+src/rqt_web/web.py
+src/rqt_web/web_widget.py
+src/rqt_web.egg-info/PKG-INFO
+src/rqt_web.egg-info/SOURCES.txt
+src/rqt_web.egg-info/dependency_links.txt
+src/rqt_web.egg-info/top_level.txt

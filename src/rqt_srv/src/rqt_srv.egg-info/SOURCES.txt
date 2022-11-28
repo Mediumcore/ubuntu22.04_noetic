@@ -1,0 +1,7 @@
+setup.py
+src/rqt_srv/__init__.py
+src/rqt_srv/services.py
+src/rqt_srv.egg-info/PKG-INFO
+src/rqt_srv.egg-info/SOURCES.txt
+src/rqt_srv.egg-info/dependency_links.txt
+src/rqt_srv.egg-info/top_level.txt

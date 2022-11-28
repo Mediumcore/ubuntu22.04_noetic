@@ -1,0 +1,8 @@
+setup.py
+src/rqt_service_caller/__init__.py
+src/rqt_service_caller/service_caller.py
+src/rqt_service_caller/service_caller_widget.py
+src/rqt_service_caller.egg-info/PKG-INFO
+src/rqt_service_caller.egg-info/SOURCES.txt
+src/rqt_service_caller.egg-info/dependency_links.txt
+src/rqt_service_caller.egg-info/top_level.txt

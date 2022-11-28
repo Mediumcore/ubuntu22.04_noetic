@@ -1,0 +1,10 @@
+setup.py
+bin/rqt
+src/rqt_gui/__init__.py
+src/rqt_gui/main.py
+src/rqt_gui/ros_plugin_provider.py
+src/rqt_gui/rospkg_plugin_provider.py
+src/rqt_gui.egg-info/PKG-INFO
+src/rqt_gui.egg-info/SOURCES.txt
+src/rqt_gui.egg-info/dependency_links.txt
+src/rqt_gui.egg-info/top_level.txt

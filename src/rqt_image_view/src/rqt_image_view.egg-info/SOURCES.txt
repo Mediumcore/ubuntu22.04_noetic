@@ -1,0 +1,6 @@
+setup.py
+scripts/rqt_image_view
+src/rqt_image_view.egg-info/PKG-INFO
+src/rqt_image_view.egg-info/SOURCES.txt
+src/rqt_image_view.egg-info/dependency_links.txt
+src/rqt_image_view.egg-info/top_level.txt

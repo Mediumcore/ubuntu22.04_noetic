@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rqt-nav-view
+Version: 0.5.7
+Summary: rqt_nav_view provides a gui for viewing navigation maps and paths.
+Home-page: http://wiki.ros.org/rqt_nav_view
+Author: Ze'ev Klapow
+Maintainer: Aaron Blasdel
+Maintainer-email: ablasdel@gmail.com
+License: BSD

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rqt-top
+Version: 0.4.10
+Summary: RQT plugin for monitoring ROS processes.
+Home-page: http://wiki.ros.org/rqt_top
+Author: Dan Lazewatsky
+Author-email: dan@lazewatsky.com
+Maintainer: Michael Carroll
+Maintainer-email: michael@openrobotics.org
+License: BSD

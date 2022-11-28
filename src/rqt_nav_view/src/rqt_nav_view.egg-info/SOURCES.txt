@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/rqt_nav_view/__init__.py
+src/rqt_nav_view/nav_view.py
+src/rqt_nav_view/nav_view_plugin.py
+src/rqt_nav_view.egg-info/PKG-INFO
+src/rqt_nav_view.egg-info/SOURCES.txt
+src/rqt_nav_view.egg-info/dependency_links.txt
+src/rqt_nav_view.egg-info/top_level.txt

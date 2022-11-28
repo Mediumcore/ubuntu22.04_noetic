@@ -1,0 +1,8 @@
+setup.py
+src/rqt_top/__init__.py
+src/rqt_top/node_info.py
+src/rqt_top/top_plugin.py
+src/rqt_top.egg-info/PKG-INFO
+src/rqt_top.egg-info/SOURCES.txt
+src/rqt_top.egg-info/dependency_links.txt
+src/rqt_top.egg-info/top_level.txt

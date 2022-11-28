@@ -1,0 +1,8 @@
+setup.py
+src/rqt_tf_tree/__init__.py
+src/rqt_tf_tree/dotcode_tf.py
+src/rqt_tf_tree/tf_tree.py
+src/rqt_tf_tree.egg-info/PKG-INFO
+src/rqt_tf_tree.egg-info/SOURCES.txt
+src/rqt_tf_tree.egg-info/dependency_links.txt
+src/rqt_tf_tree.egg-info/top_level.txt

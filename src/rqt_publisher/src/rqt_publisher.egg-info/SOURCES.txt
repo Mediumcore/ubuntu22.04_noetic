@@ -1,0 +1,10 @@
+setup.py
+src/rqt_publisher/__init__.py
+src/rqt_publisher/publisher.py
+src/rqt_publisher/publisher_tree_model.py
+src/rqt_publisher/publisher_tree_widget.py
+src/rqt_publisher/publisher_widget.py
+src/rqt_publisher.egg-info/PKG-INFO
+src/rqt_publisher.egg-info/SOURCES.txt
+src/rqt_publisher.egg-info/dependency_links.txt
+src/rqt_publisher.egg-info/top_level.txt
