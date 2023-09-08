@@ -556,12 +556,12 @@ class TimelineFrame(QGraphicsItem):
 
         painter.setPen(self._selected_region_outline_ends_color)
         painter.setBrush(Qt.NoBrush)
-        painter.drawLine(left, top, left, top + height)
-        painter.drawLine(left + width, top, left + width, top + height)
+        painter.drawLine(int(left), int(top), int(left), int(top + height))
+        painter.drawLine(int(left + width), int(top), int(left + width), int(top + height))
 
         painter.setPen(self._selected_region_outline_top_color)
         painter.setBrush(Qt.NoBrush)
-        painter.drawLine(left, top, left + width, top)
+        painter.drawLine(int(left), int(top), int(left + width), int(top))
 
         painter.setPen(self._selected_region_outline_top_color)
         painter.drawLine(int(left), int(self._history_top), int(left), int(self._history_bottom))
