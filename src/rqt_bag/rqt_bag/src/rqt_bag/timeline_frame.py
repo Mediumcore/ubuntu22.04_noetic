@@ -454,7 +454,7 @@ class TimelineFrame(QGraphicsItem):
 
             painter.setBrush(QBrush(datatype_color))
             painter.setPen(QPen(datatype_color, 1))
-            painter.drawRect(region_x_start, msg_y, region_width, msg_height)
+            painter.drawRect(int(region_x_start), int(msg_y), int(region_width), int(msg_height))
 
         # Draw active message
         if topic in self.scene()._listeners:
@@ -469,7 +469,7 @@ class TimelineFrame(QGraphicsItem):
                 if playhead_stamp > self._stamp_left and playhead_stamp < self._stamp_right:
                     playhead_x = self._history_left + \
                         (all_stamps[playhead_index] - self._stamp_left) * width_interval
-                    painter.drawLine(playhead_x, msg_y, playhead_x, msg_y + msg_height)
+                    painter.drawLine(int(playhead_x), int(msg_y), int(playhead_x), int(msg_y + msg_height))
             curpen.setWidth(oldwidth)
             painter.setPen(curpen)
 
@@ -500,10 +500,10 @@ class TimelineFrame(QGraphicsItem):
         x_start, x_end = self.map_stamp_to_x(
             self._start_stamp.to_sec()), self.map_stamp_to_x(self._end_stamp.to_sec())
         painter.setBrush(QBrush(self._bag_end_color))
-        painter.drawRect(self._history_left, self._history_top, x_start -
-                         self._history_left, self._history_bottom - self._history_top)
-        painter.drawRect(x_end, self._history_top, self._history_left +
-                         self._history_width - x_end, self._history_bottom - self._history_top)
+        painter.drawRect(int(self._history_left),int(self._history_top), int(x_start -
+                         self._history_left), int(self._history_bottom - self._history_top))
+        painter.drawRect(int(x_end), int(self._history_top), int(self._history_left +
+                         self._history_width - x_end), int(self._history_bottom - self._history_top))
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
 
@@ -526,7 +526,7 @@ class TimelineFrame(QGraphicsItem):
                 painter.setPen(Qt.lightGray)
                 painter.setBrush(QBrush(self._history_background_color))
             left = max(clip_left, x)
-            painter.drawRect(left, y, min(clip_right - left, w), h)
+            painter.drawRect(int(left), int(y), int(min(clip_right - left, w)), int(h))
             row += 1
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
@@ -552,7 +552,7 @@ class TimelineFrame(QGraphicsItem):
 
         painter.setPen(self._selected_region_color)
         painter.setBrush(QBrush(self._selected_region_color))
-        painter.drawRect(left, top, width, height)
+        painter.drawRect(int(left), int(top), int(width), int(height))
 
         painter.setPen(self._selected_region_outline_ends_color)
         painter.setBrush(Qt.NoBrush)
@@ -564,8 +564,8 @@ class TimelineFrame(QGraphicsItem):
         painter.drawLine(left, top, left + width, top)
 
         painter.setPen(self._selected_region_outline_top_color)
-        painter.drawLine(left, self._history_top, left, self._history_bottom)
-        painter.drawLine(left + width, self._history_top, left + width, self._history_bottom)
+        painter.drawLine(int(left), int(self._history_top), int(left), int(self._history_bottom))
+        painter.drawLine(int(left + width), int(self._history_top), int(left + width), int(self._history_bottom))
 
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
@@ -581,7 +581,7 @@ class TimelineFrame(QGraphicsItem):
         # Line
         painter.setPen(QPen(self._playhead_color))
         painter.setBrush(QBrush(self._playhead_color))
-        painter.drawLine(px, self._history_top - 1, px, self._history_bottom + 2)
+        painter.drawLine(int(px), int(self._history_top - 1), int(px), int(self._history_bottom + 2))
 
         # Upper triangle
         py = self._history_top - ph
@@ -607,7 +607,7 @@ class TimelineFrame(QGraphicsItem):
 
         painter.setBrush(Qt.NoBrush)
         painter.setPen(Qt.black)
-        painter.drawRect(x, y, w, h)
+        painter.drawRect(int(x), int(y), int(w), int(h))
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
 
@@ -674,7 +674,7 @@ class TimelineFrame(QGraphicsItem):
 
             painter.setPen(self._major_division_pen)
             painter.drawLine(
-                x, label_y - self._time_tick_height - self._time_font_size, x, self._history_bottom)
+                int(x), int(label_y - self._time_tick_height - self._time_font_size), int(x), int(self._history_bottom))
 
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
@@ -687,11 +687,11 @@ class TimelineFrame(QGraphicsItem):
         xs = [self.map_stamp_to_x(stamp) for stamp in stamps]
         painter.setPen(self._minor_division_pen)
         for x in xs:
-            painter.drawLine(x, self._history_top, x, self._history_bottom)
+            painter.drawLine(int(x), int(self._history_top), int(x), int(self._history_bottom))
 
         painter.setPen(self._minor_division_tick_pen)
         for x in xs:
-            painter.drawLine(x, self._history_top - self._time_tick_height, x, self._history_top)
+            painter.drawLine(int(x), int(self._history_top - self._time_tick_height), int(x), int(self._history_top))
 
         painter.setBrush(self._default_brush)
         painter.setPen(self._default_pen)
