@@ -624,7 +624,7 @@ class TimelineFrame(QGraphicsItem):
             painter.setBrush(self._default_brush)
             painter.setPen(self._default_pen)
             painter.setFont(self._topic_font)
-            painter.drawText(coords[0], coords[1], self._trimmed_topic_name(text))
+            painter.drawText(int(coords[0]), int(coords[1]), self._trimmed_topic_name(text))
 
     def _draw_time_divisions(self, painter):
         """
@@ -670,7 +670,7 @@ class TimelineFrame(QGraphicsItem):
                 painter.setBrush(self._default_brush)
                 painter.setPen(self._default_pen)
                 painter.setFont(self._time_font)
-                painter.drawText(label_x, label_y, label)
+                painter.drawText(int(label_x), int(label_y), label)
 
             painter.setPen(self._major_division_pen)
             painter.drawLine(
